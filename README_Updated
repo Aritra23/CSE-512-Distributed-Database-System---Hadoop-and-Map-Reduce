@@ -1,0 +1,38 @@
+/** 
+	Implementation of the Spatial Queries on a large dataset through Spark
+	Written by:
+		Akash Nishar 		<anishar@asu.edu> 	1207689739
+		Aritra Kumar Lahiri	<aklahiri@asu.edu>	1207275819	
+		Arun Subramanian	<s.arunkumar@asu.edu>	1207681991
+		Milind Jindal		<mjindal2@asu.edu>	1207225223
+		Rohit Singh		<rsingh46@asu.edu>	1207607579
+		Venkata SaiGirish Konda <vkonda2@asu.edu>	1207682498
+*/
+Prerequisites:
+	1. Working Hadoop cluster(preferably distributed)
+	2. Working Spark cluster
+	3. Build file of the latest JAR for the code (DDS_Proj-0.0.1-RELEASE.jar)
+Steps to run the code:
+	1. Change the HDFS Location in edu.asu.anishar.Util to the HDFS cluster being used
+	2. Change the Input file locations if running the code through jar code.
+	3. Call the respective methods from the folders:
+		a) edu.asu.anishar.FarthestPoint.getFarthestPoint(String Inputlocation, String OutputLocation)
+		b) edu.asu.mjindal2.SpatialRangeQuery.getSpatialRangeQuery(String Inputlocation1,String Inputlocation2, String OutputLocation)
+		c) edu.asu.mjindal2.SpatilJoin.spatialJoinQuery(String Inputlocation1,String Inputlocation2, String OutputLocation)		
+		d) edu.asu.arun.ConvexHull.getConvexHull(String Inputlocation, String OutputLocation)
+		e) edu.asu.anishar.PolygonUnion.getPolygonUnion(String Inputlocation, String OutputLocation)
+		f) edu.asu.vkonda2.ClosestPair.getClosestPair(String Inputlocation, String OutputLocation)
+	4. Check the output at the HDFS output location
+
+For HeatMap:
+To Execute the code(Heat Map):
+	1. Change the 
+		input1->windows file
+		input2->points file
+		output->output directory
+	2. Build the jar through Maven Build command in the project folder
+		mvn clean install 
+	3. Excecute the TwitterHeatMapLatestPoint.spatialHeatMap() method.
+
+
+	

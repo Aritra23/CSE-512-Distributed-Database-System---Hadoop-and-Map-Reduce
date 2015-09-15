@@ -1,3 +1,8 @@
+
+
+# Distributed-Database-System---Hadoop-and-Map-Reduce
+
+
 /** 
 	Implementation of the Spatial Queries on a large dataset through Spark
 	Written by:
@@ -18,7 +23,7 @@ Steps to run the code:
 	3. Call the respective methods from the folders:
 		a) edu.asu.anishar.FarthestPoint.getFarthestPoint(String Inputlocation, String OutputLocation)
 		b) edu.asu.mjindal2.SpatialRangeQuery.getSpatialRangeQuery(String Inputlocation1,String Inputlocation2, String OutputLocation)
-		c) edu.asu.mjindal2.SpatilJoin.spatialJoinQuery(String Inputlocation1,String Inputlocation2, String OutputLocation)		
+		c) edu.asu.Aritra.SpatilJoin.spatialJoinQuery(String Inputlocation1,String Inputlocation2, String OutputLocation)		
 		d) edu.asu.arun.ConvexHull.getConvexHull(String Inputlocation, String OutputLocation)
 		e) edu.asu.anishar.PolygonUnion.getPolygonUnion(String Inputlocation, String OutputLocation)
 		f) edu.asu.vkonda2.ClosestPair.getClosestPair(String Inputlocation, String OutputLocation)
